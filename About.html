@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hiru</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/98d92942df.js" crossorigin="anonymous"></script>
+<style>
+
+/*design the cover photo*/	
+.cover{
+	background: url("about11111.jpeg");
+	background-repeat: no-repeat;
+	opacity:0.8;
+	height: 700px;
+	width: 75%;
+}
+
+div.transbox1{   
+	width : 810px;
+	height:250px;
+	background-color:#000000;
+	/* for IE */
+	filter:alpha(opacity=60);
+	/* CSS3 standard */
+	opacity:0.8;
+	position:absolute;
+	right: 0px;
+	top: 270px;
+	bottom : 200px;
+	font-family: Arial, Helvetica, sans-serif;
+    color : #ffffff;
+    text-align : center justify;
+	line-height: 30px;
+}
+
+h2{
+text-align: center;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*style the subtitle of who is hirushani*/
+.subtitle{
+	text-decoration: none;
+	font-weight:bold;
+	color: #ffffff;
+}
+
+a{
+text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #f1f1f1;
+	padding: 20px;
+	font-family: Arial;
+}
+
+/* Center website */
+.main {
+	max-width: 1000px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 50px;
+	word-break: break-all;
+}
+
+.row {
+	margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+	padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 33.33%;
+	display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Content */
+.content {
+	background-color: white;
+	padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+	display: block;
+}
+
+/* Style the buttons */
+.btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #ddd;
+}
+
+.btn.active {
+	background-color: #666;
+	color: white;
+}
+
+img{
+	width:75%;
+	height: 260px;
+	}
+	
+p{
+	text-align: justify;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="Home.html" ><i class="fa-solid fa-house"></i> Home</a> 
+  <a class="active" href="About.html"><i class="fa-solid fa-user" target="_blank"></i></i> About</a> 
+  <a href="Contact.html"><i class="fa-solid fa-envelope" target="_blank"></i> Contact</a> 
+</div>
+
+<div class="cover">
+	<div class="transbox1">
+	<table>
+		<tr>
+			<th style="width:40%"></th>
+			<th style="width:20%"></th>
+	</tr>
+	<tr>
+		<td><h2>WHO IS <br>Hirushani Umayanga</h2></td>
+		<td><ul>
+				<li><a class="subtitle" href="#caption1">Bio</a></li>
+				<li><a class="subtitle" href="#caption2">Goals</a></li>
+				<li><a class="subtitle" href="#caption3">Skills</a></li>
+				<li><a class="subtitle" href="#caption4">Work Experiences</a></li>
+				<li><a class="subtitle" href="#caption5">Achievements</a></li>
+				<li><a class="subtitle" href="#caption6">Talents</a></li>
+			</ul>
+		</td>
+	</tr>
+	</table>
+	</div>
+	
+	<a href="https://www.facebook.com/hirushani.umayanga.3" class="fa fa-facebook" target="_blank"></a>
+	<a href="https://twitter.com/HirushaniUmaya1?t=hPe-oaTgHASjQgjIwZGpAw&s=09" class="fa fa-twitter" target="_blank"></a>
+    <a href="https://www.linkedin.com/in/hirushani-umayanga-770346197" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://www.instagram.com/hiruuuu__________/?hl=en" class="fa fa-instragram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="mailto: hirushani199@gmail.com" class="fa fa-gmail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+	<a href="https://github.com/Umayanga98H" class="fa fa-github" target="_blank"></a>
+	
+</div>
+
+<div id="myBtnContainer">
+	<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+	<button class="btn" onclick="filterSelection('Bio')"> Biography</button>
+	<button class="btn" onclick="filterSelection('Professional')"> Professional</button>
+	<button class="btn" onclick="filterSelection('Free_time')"> Free time</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Bio">
+    <div class="content">
+      <img src="bio3.jpg" alt="Personal" style="width:75%" class="center">
+      <h4 id="caption1">Bio</h4>
+      <p>I'm Hirushani Umayanaga who is the youngest one in the family with four family members, live in Western province,Sri Lanka and following B.Sc Hons in Computer Science, University of Kelaniya.Im very self learning person and set everthing to timeline and planning everything detail with a todo list.That's my personal approach to work. </p>
+    </div>
+  </div>
+  <div class="column Bio">
+    <div class="content">
+    <img src="goals.jpg" alt="Goals" style="width:75%" class="center">
+      <h4 id="caption2">Goals</h4>
+      <p>To become balance person in career and personal life with peace and pleasure within next three years,to donor every boady parts at my death and try to cover 12times blood doantion,to cover every actrative palces in sri lanka before my 40's and do travel all around the world before my 60's.</p>
+    </div>
+  </div>
+  <div class="column Bio">
+    <div class="content">
+    <img src="skills3.jpg" alt="Skills" style="width:75%" class="center">
+      <h4 id="caption3">Skills</h4>
+      <table>
+		<tr><td>Programmer</td><td>:C,Java,SQL,C#,Kotlin,JavaScript,HTML,CSS,PHP</td></tr>
+		<tr><td>Content writter</td><td>:article writter in <a href="https://ac-uok.com/diary.html" target="_blank">Adventure Club.UOK</a></td></tr>
+		<tr><td>Content creater </td><td>:flyer designing in <a href="https://m.facebook.com/ledkln/photos/a.930045010475212/2929122183900808/?type=3&d=m" target="_blank">LED KLN</a></td></tr>
+		<tr><td>Blog creater</td><td>:maintain personal blog called <a href="https://vm.tiktok.com/ZSJAAX6Ts/" target="_blank">foodie</a> <a href="  https://www.instagram.com/invites/contact/?i=hkh36mcjblfo&utm_content=lo5hrqq" target="_blank"> travellers</a></td></tr>
+		<tr><td>Photographer</td><td>:self learining with editing tools</d></tr>
+		<tr><td>Diver</td><td>: certified PADI Open Water <a href="https://www.instagram.com/tv/CYiZIQ2syii/?utm_medium=copy_link" target="_blank">diver</a></d></tr>
+	  </table>
+    </div>
+  </div>
+  
+  <div class="column Professional">
+    <div class="content">
+      <img src="expereince.jpg" alt="Experiences" style="width:75%" class="center">
+      <h4 id="caption4">Work Experineces</h4>
+      <table>
+		<tr><td>2021</td><td>:Treasure at Rota Tommorow project of <a href="https://www.linkedin.com/posts/hirushani-umayanga-770346197_rotaract-srilanka-rotaract3220-activity-6771483371748126720-VJhc" target="_blank">Rotaract Club,UOK</a></td></tr>
+		<tr><td>since 2021</td><td>:Flyer designer of <a href="https://m.facebook.com/ledkln/photos/a.930045010475212/2929122183900808/?type=3&d=m" target="_blank">LED KLN,UOK</a></td></tr>
+		<tr><td>since 2021</td><td>:Exactive commitee member,science faculty representative,Head of content creators of Adventure club,UOK</td></tr>
+		<tr><td>since 2021</td><td>:Founder of Vihanga Thejantha Blood Donation Camp,Bulugahagoda,Ganemulla,11020.</d></tr>
+	  </table>
+    </div>
+  </div>
+  <div class="column Professional">
+    <div class="content">
+    <img src="achiements.png" alt="Achievements" style="width:75%" class="center">
+      <h4 id="caption5">Achievements</h4>
+      <table>
+	  <tr>
+	  <td><ul>
+				<li>President scout in Gampaha region</li>
+				<li>CIMA certificate level qualified</li>
+				<li>Selected to Computer Science special degree program</li>
+			</ul>
+		</td>
+	    </tr>
+		</table>
+    </div>
+  </div>
+  <div class="column Free_time">
+    <div class="content">
+    <img src="talents2.jpg" alt="Talents" style="width:75%" class="center">
+      <h4 id="caption6">Talents</h4>
+      <table>
+	  <tr>
+	  <td><ul>
+				<li>Hiking & camping at Maligathenna,Great western,Narangala,Ambokka,Haritha kanda</li>
+				<li>Adventurer in ATV ride,Jet ski ride,Kayaking,Air riffle shootting,Water fall hunting</li>
+				<li>Net ball palyer at School and university team</li>
+				<li>Blood donar</li>
+				<li>Violin and Guitar player</li>
+				<li>Birthday cake designer as a part time </li>
+			</ul>
+		</td>
+	    </tr>
+		</table>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+<div class="footer">  
+	<p class="foot">&copy All Rights Reserved</p> 
+</div>
+
+</body>
+
+</html>

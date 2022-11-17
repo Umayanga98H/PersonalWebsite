@@ -1,0 +1,99 @@
+/*SOCIAL MEDIA LINKS BUTTONS*/	
+.fa {
+	position: absolute;
+	right: -75px;
+	padding: 15px;
+	width: 105px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.fa:hover {
+	right: 0;
+	opticiy: 0.7;
+}
+
+.fa-facebook {
+	top: 60px;
+	background: #3b5998;
+	color: white;
+}
+
+.fa-twitter {
+	top: 120px;
+	background: #1da1f2;
+	color: white;
+}
+
+.fa-linkedin {
+	top: 180px;
+	background: #0a66c2;
+	color: white;
+}
+
+.fa-instragram {
+	top: 240px;
+	background: #c32aa3;
+	color: white;
+}
+
+.fa-gmail {
+	top: 300px;
+	background: #db4437;
+	color: white;
+}
+
+.fa-github {
+	top: 360px;
+	background: #333;
+	color: white;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+	width: 100%;
+	background-color: #555;
+	overflow: auto;
+}
+
+.navbar a {
+	float: left;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background-color: #000;
+}
+
+.active {
+	background-color: #717171;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+	float: none;
+    display: block;
+  }
+}
+
+.foot{
+	text-align: center;
+	margin: 15px;
+}
+
+/*FOOTER*/
+.footer {  
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;  
+	margin-top: 10px;  
+	width: 100%;  
+	background-color: #555;  
+	color: white;
+	text-decoration: none;
+	font-size: 15px    
+} 

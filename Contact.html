@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hiru</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/98d92942df.js" crossorigin="anonymous"></script>
+	
+	<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+	</script>
+	
+<style>
+/*Add styles to the background */
+body {
+	background-image: url('hobbies3.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity:1;
+}
+
+a{
+	text-decoration: none;
+	color:#000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add styles to the form container */
+.container {
+	position: relative;
+	right: 0px;
+	top: 0px;
+	margin-top: 5px;
+	max-width: 1312px;
+	padding: 16px;
+	background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text] {
+	width: 94%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus,input[type=checkbox]:focus,textarea:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+	background-color: #04AA6D;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	opacity: 0.9;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+/*conatact infromation area*/
+.contact{
+	font-family: Arial, Helvetica, sans-serif;
+	color : #000000;
+	width : 48%;
+	height:300px;
+	background-color:#ffffff;
+	/* for IE */
+	filter:alpha(opacity=60);
+	/* CSS3 standard */
+	opacity:0.9;
+	position:absolute;
+	margin-right: 5px;
+	bottom : 5px;
+	top: 150px;
+	margin-left: 0px;
+}
+
+/*map area*/
+.map{
+	width : 50%;
+	height:490px;
+	position:relative;
+	margin-right: 5px;
+	bottom : 5px;
+	margin-left: 20px;
+	margin-top: 30px;
+	width: 50%;
+	position:relative;
+	right:-720px;
+}
+
+table{
+	width: 90%;
+}
+
+th{
+	font-size:25px;
+}
+
+td{
+	font-size:20px:
+	text-align:left;
+}
+	
+</style>
+
+</head>
+
+<body>
+<div class="navbar">
+  <a href="Home.html" ><i class="fa-solid fa-house"></i> Home</a> 
+  <a href="About.html"><i class="fa-solid fa-user" target="_blank"></i></i> About</a> 
+  <a class="active" href="Contact.html"><i class="fa-solid fa-envelope" target="_blank"></i> Contact</a> 
+</div>
+
+<a href="https://www.facebook.com/hirushani.umayanga.3" class="fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/HirushaniUmaya1?t=hPe-oaTgHASjQgjIwZGpAw&s=09" class="fa fa-twitter" target="_blank"></a>
+<a href="https://www.linkedin.com/in/hirushani-umayanga-770346197" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://www.instagram.com/hiruuuu__________/?hl=en" class="fa fa-instragram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="mailto: hirushani199@gmail.com" class="fa fa-gmail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+<a href="https://github.com/Umayanga98H" class="fa fa-github" target="_blank"></a>
+
+<div class="contact">
+<br><br><br>
+<table >
+	<tr><th>Contact</th><th>Address</th></tr>
+	<tr><td>E-mail:<br><br>
+		<a href="mailto: hirushani199@gmail.com">hirushani199@gmail.com</a><br><br>
+		<a href="mailto: umayanga_ps17199@stu.kln.ac.lk">umayanga_ps17199@stu.kln.ac.lk</a><br><br>
+		Phone:<br><br> +94(71)088 1010
+	</td>
+	<td>
+	A.M.K.H.Umayanga,</br>
+	No:54/1;<br>
+	Bulugahagoda,<br>
+	Ganemulla,<br>
+	11020<br>
+	Sri Lanka.
+	</td>
+	</tr>
+</table>
+</div>
+
+<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1815.4546735827907!2d79.94315945529924!3d7.063834165633149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7e30e0d8a5afbeb!2zN8KwMDMnNTEuNCJOIDc5wrA1NiczNy44IkU!5e0!3m2!1sen!2slk!4v1646804990103!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<form name="myForm" action="mailto:hirushani199@gmail.com" class="container" onsubmit="return validateForm()" method="post" target="_blank" autocomplete="on">
+<table>
+<h1>Do you need some help!</h1>
+
+	<tr>
+	<td><label for="fname"><b>Name</b></label></td>
+    <td><input type="text" placeholder="Enter FirstName LastName" name="fname"></td>
+	</tr>
+	
+    <tr>
+	<td><label for="email"><b>Email</b></label></td>
+    <td><input type="text" placeholder="Enter Email" name="email" required></td>
+	</tr>
+	
+	<tr>
+	<td><label for="arer"><b>Iterested Area </b></label><br><br></td>
+	<td> <input type="checkbox" id="a1" name="a1" value="Diving">
+		<label for="a1"> Diving</label>
+		<input type="checkbox" id="a2" name="a2" value="Hiking">
+		<label for="a2"> Hiking & camping</label>
+		<input type="checkbox" id="a3" name="a3" value="Article">
+		<label for="a3"> Article writing</label>
+		<input type="checkbox" id="a4" name="a4" value="Flyer">
+		<label for="a4"> Flyer designing</label>
+		<input type="checkbox" id="a5" name="a5" value="Programming">
+		<label for="a5">Programming</label>
+		<input type="checkbox" id="a6" name="a6" value="Baking">
+		<label for="a6">Birthday cake designing </label>
+		<input type="checkbox" id="a7" name="a7" value="Kayaking">
+		<label for="a6">Kayaking </label>
+		<input type="checkbox" id="a8" name="a8" value="Photography">
+		<label for="a6">Photography & editing </label><br><br>
+	</td>
+	</tr>
+	
+	<tr>
+	<td><label for="comments"><b>Comments </b></label></td>
+	<td><textarea id="comments" placeholder="Comment here anything regarded to my interested areas and can ask for an recommendation." name="comments" rows="4" cols="138" required></textarea></td>
+	</tr>
+	
+    <tr>	
+	<td></td><td><button type="reset" class="btn">Clear</button>
+				 <button type="submit" class="btn">Submit</button></td>
+	</tr>
+</table>
+ </form>
+ 
+<div class="footer">  
+<p class="foot"> &copy All Rights Reserved</p> 
+</div>
+
+</body>
+
+</html>
